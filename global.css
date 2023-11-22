@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Lato:wght@400;700;900&family=Poppins:wght@400;500;600&display=swap');
+
+@font-face {
+    font-family: "Claphand";
+    src: url(font/wensley-regulardemo-webfont.woff2);
+}
+
+body {
+    line-height: 1.5rem;
+    font-family: "Lato";  
+    margin: 0;
+    font-size: var(--normal-p);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+nav ul li a,
+.mobile-menu ul li a {
+    color: var(--color-main-second);
+    font-weight: 600;
+}
+
+.other-header h1 {
+    font-family: var(--body);
+    font-size: var(--h1-title);
+    color: var(--color-main-color);
+    margin: 0;
+    font-weight: 900;
+
+    text-align: center;
+}
+
+span {
+    font-family: var(--header);
+    font-weight: normal;
+    font-style: italic;
+    color: var(--color-text-highlight);
+}
+
+h2 {
+    text-align: center;
+    font-size: var(--h2-subtitle);
+    margin-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: var(--button);
+}
+  
+  :root {
+    /* fonts */
+    --header: "Claphand";
+    --body: "Lato";
+
+    /* New Font */
+    --h1-title: 50px;
+    --h2-subtitle:30px;
+    --h3-title:28px;
+    --h4-title:20px;
+    --h4-category: 12px;
+    --h5-small-title: 16px;
+    --normal-p: 16px;
+
+    /* New Color */
+    --color-main-color: #FAB4AA;
+    --color-main-second: #285A6E;
+    --color-other-color: #FA49A6;
+    --color-other-second: #FC8EAC;
+    --color-text-first: #000000;
+    --color-text-second: #ffffff;
+    --color-text-highlight: #fb8573;
+    --color-background: #fdf1ec;
+    --color-background-second: #ffeee8;
+  
+    /* Border radiuses */
+    --br-button: 100px;
+    --br-card: 10px;
+    --br-form: 10px;
+  }
+  
