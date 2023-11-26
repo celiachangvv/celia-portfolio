@@ -438,12 +438,12 @@ footer p {
 }
 
 .other-header-title {
-    padding-top: 5rem;
+    padding: 5rem 10px 0;
 } 
 
 .other-header .other-header-title h1 {
     color: var(--color-main-second);
-    margin: 3rem 0;
+    margin: 2rem 0;
 } 
 
 .other-header .tags-all {
@@ -673,19 +673,52 @@ input[type=submit]:active {
 
 .single-project h4 {
     font-size: var(--h4-title);
-    color: rgb(rgb(191, 84, 84))
+    margin-bottom: 20px;
 }
 
-.single-one-work,
+/* .single-one-work,
 .single-gallery {
     padding: 0 2rem;
+} */
+
+.single-one-work {
+    margin: 0 auto;
+    width: 350px;
 }
 
-.single-one-work:nth-child(4) {
-    background-color: var(--color-background);
-    margin-top: 5rem;
-    padding: 5rem 2rem;
+.single-project-description {
+    margin: 0 auto;
+    width: 350px;
 }
+
+.single-project-description p {
+    text-align: start;
+    margin-top: 2rem;
+}
+
+.single-project-link {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.proposal {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    color: var(--color-main-second);
+    font-weight: 600;
+}
+
+.proposal p {
+    margin: 0;
+}
+
+/* .single-one-work img {
+
+} */
+
 
 .other-header-title .tags {
     background-color: var(--color-main-color);
@@ -718,7 +751,12 @@ input[type=submit]:active {
 @media screen and (min-width:430px) {
     .homepage-single-work {
         width: 350px;
-}
+    }
+
+    .single-project-description {
+        margin: 0 auto;
+        width: 400px;
+    }
 }
 @media screen and (min-width:650px){
     /* Header */
@@ -867,6 +905,16 @@ input[type=submit]:active {
         display: flex;
         flex-direction: row;
     }
+
+    .single-one-work {
+        margin: 0 auto;
+        width: 700px;
+    }
+
+    .single-project-description {
+        margin: 0 auto;
+        width: 800px;
+    }
 }
 
 @media screen and (min-width:1250px){
@@ -878,14 +926,14 @@ input[type=submit]:active {
         width: 300px;
     }
 
-    .single-one-work,
+    /* .single-one-work,
     .single-gallery {
         padding: 0 10rem;
-    }
+    } */
 
-    .single-one-work:nth-child(4) {
+    /* .single-one-work:nth-child(4) {
         padding: 5rem 10rem;
-    }
+    } */
 }
 
 @media only screen and (max-width: 768px) {
