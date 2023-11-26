@@ -697,14 +697,6 @@ input[type=submit]:active {
     gap: 50px;
 }
 
-.proposal {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    color: var(--color-main-second);
-    font-weight: 600;
-}
 
 .proposal p {
     margin: 0;
