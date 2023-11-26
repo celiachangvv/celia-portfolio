@@ -916,15 +916,6 @@ input[type=submit]:active {
     .homepage-profile-image img {
         width: 300px;
     }
-
-    /* .single-one-work,
-    .single-gallery {
-        padding: 0 10rem;
-    } */
-
-    /* .single-one-work:nth-child(4) {
-        padding: 5rem 10rem;
-    } */
 }
 
 @media only screen and (max-width: 768px) {
