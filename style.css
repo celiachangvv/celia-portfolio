@@ -676,11 +676,6 @@ input[type=submit]:active {
     margin-bottom: 20px;
 }
 
-/* .single-one-work,
-.single-gallery {
-    padding: 0 2rem;
-} */
-
 .single-one-work {
     margin: 0 auto;
     width: 350px;
@@ -714,10 +709,6 @@ input[type=submit]:active {
 .proposal p {
     margin: 0;
 }
-
-/* .single-one-work img {
-
-} */
 
 
 .other-header-title .tags {
