@@ -697,7 +697,7 @@ input[type=submit]:active {
     gap: 50px;
 }
 
-.proposal {
+.single-project-link .proposal{
     display: flex;
     flex-direction: row;
     gap: 10px;
