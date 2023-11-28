@@ -336,6 +336,20 @@ nav {
     max-width: 30px;
 }
 
+.project-software-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.project-software-logo img {
+    width: auto;
+    height: 50px;
+    max-height: 50px;
+}
+
 /* Footer =============== */
 footer {
     background-color: var(--color-main-second);
