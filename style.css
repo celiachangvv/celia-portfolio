@@ -177,6 +177,10 @@ nav {
     padding: 0 2rem;
 }
 
+.homepage-aboutme-text {
+    max-width: 700px;
+}
+
 /* Work */
 .homepage-work {
     display: flex;
@@ -775,6 +779,8 @@ input[type=submit]:active {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
+        max-width: 1000px;
+        margin: auto;
     }
 
     /* work-card */
@@ -814,6 +820,7 @@ input[type=submit]:active {
         display: flex;
         gap: 30px;
         align-items: center;
+        justify-content: center;
     }
 
     .homepage-profile-image img {
