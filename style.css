@@ -481,7 +481,8 @@ footer p {
 
 #design,
 #branding,
-#marketing {
+#marketing,
+.other-work {
     background-color: var(--color-background);
 }
 
@@ -695,9 +696,19 @@ input[type=submit]:active {
     margin-bottom: 20px;
 }
 
-.single-one-work {
+.single-one-work,
+.other-one-work,
+.other-one-work-1 {
     margin: 0 auto;
     width: 350px;
+}
+
+.other-one-work {
+    padding: 50px 0;
+}
+
+.other-one-work-1 {
+    padding: 0 0 50px;
 }
 
 .single-project-description {
@@ -757,6 +768,20 @@ input[type=submit]:active {
     width:100%;
     border-top: 1px solid var(--color-main-color);
 }
+
+.team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.team img {
+    width: 150px;
+    height: auto;
+}
+
 
 @media screen and (min-width:430px) {
     .homepage-single-work {
@@ -919,7 +944,9 @@ input[type=submit]:active {
         flex-direction: row;
     }
 
-    .single-one-work {
+    .single-one-work,
+    .other-one-work,
+    .other-one-work-1 {
         margin: 0 auto;
         width: 700px;
     }
@@ -927,6 +954,19 @@ input[type=submit]:active {
     .single-project-description {
         margin: 0 auto;
         width: 800px;
+    }
+
+    /* handout */
+    .handout {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    /* team */
+    .team img {
+        width: 200px;
+        height: auto;
     }
 }
 
