@@ -502,7 +502,8 @@ footer p {
     padding: 10px 0;
 }
 
-.projects-tags ul li a{
+.projects-tags ul li a,
+.userflow-figma{
     padding: 10px;
     margin: 0;
     background-color: var(--color-main-color);
@@ -515,11 +516,13 @@ footer p {
     position: relative;
 }
 
-.projects-tags ul li a:hover {
+.projects-tags ul li a:hover,
+.userflow-figma:hover {
     box-shadow: 2px 2px 0 var(--color-main-second);
 }
 
-.projects-tags ul li a:active{
+.projects-tags ul li a:active,
+.userflow-figma:active{
     top: 2px;
     left: 2px;
     background-color: var(--color-main-second);
