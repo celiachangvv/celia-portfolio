@@ -163,6 +163,10 @@ nav {
     margin-bottom: 5rem;
 }
 
+.homepage-my-work .homepage-h3-center h3{
+    text-align: center;
+}
+
 .homepage-can-do,
 #design,
 #project,
@@ -170,6 +174,14 @@ nav {
 #production,
 #branding {
     padding: 5rem 0;
+}
+
+#post,
+#graphic,
+#production,
+#social,
+#photo {
+    padding: 20px 0;
 }
 
 .homepage-aboutme {
@@ -191,8 +203,18 @@ nav {
     align-items: center;
 }
 
+.homepage-work-all {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
 /* work-card */
-.homepage-single-work {
+.homepage-single-work,
+.homepage-single-work-all {
     border: 1px solid var(--color-main-color);
     border-radius: 10px;
     padding: 10px;
@@ -204,11 +226,13 @@ nav {
     position: relative;
 }
 
-.homepage-single-work:hover {
+.homepage-single-work:hover,
+.homepage-single-work-all:hover {
     box-shadow: 4px 4px 0 var(--color-main-color);
 }
 
-.homepage-single-work:active {
+.homepage-single-work:active,
+.homepage-single-work-all:active {
     /* float: right; */
     box-shadow: 0 0;
 
@@ -216,7 +240,8 @@ nav {
     top: 4px;
 }
 
-.homepage-work-grid {
+.homepage-work-grid,
+.homepage-work-grid-all {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -482,14 +507,24 @@ footer p {
 #design,
 #branding,
 #marketing,
-.other-work {
+.other-work,
+#post,
+#graphic,
+#production {
     background-color: var(--color-background);
 }
 
-.projects-tags ul{
+.projects-tags ul,
+.projects-tags-social ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    list-style: none;
+}
+
+
+.projects-tags ul {
     gap: 20px;
     justify-content: center;
     align-items: center;
@@ -498,11 +533,22 @@ footer p {
     list-style: none;
 }
 
-.projects-tags ul li {
+.projects-tags-social ul {
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+
+    list-style: none;
+}
+
+.projects-tags ul li,
+.projects-tags-social ul li {
     padding: 10px 0;
 }
 
 .projects-tags ul li a,
+.projects-tags-social ul li a,
 .userflow-figma{
     padding: 10px;
     margin: 0;
@@ -517,11 +563,13 @@ footer p {
 }
 
 .projects-tags ul li a:hover,
+.projects-tags-social ul li a:hover,
 .userflow-figma:hover {
     box-shadow: 2px 2px 0 var(--color-main-second);
 }
 
 .projects-tags ul li a:active,
+.projects-tags-social ul li a:active,
 .userflow-figma:active{
     top: 2px;
     left: 2px;
@@ -532,7 +580,8 @@ footer p {
     font-weight: 600;
 }
 
-.projects-tags p{
+.projects-tags p,
+.projects-tags-social p{
     text-align: center;
     margin-bottom: 20px;
 }
@@ -701,9 +750,14 @@ input[type=submit]:active {
 
 .single-one-work,
 .other-one-work,
-.other-one-work-1 {
+.other-one-work-1,
+.social-one-work {
     margin: 0 auto;
     width: 350px;
+}
+
+.social-one-work {
+    padding: 50px 0;
 }
 
 .other-one-work {
@@ -766,6 +820,20 @@ input[type=submit]:active {
     width: 100%;
 }
 
+.marketing-photo {
+    margin-bottom: 10px;
+}
+
+.marketing-photo p {
+    margin: 0;
+}
+
+.all-video {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
 .line {
     display: block;
     width:100%;
@@ -787,7 +855,8 @@ input[type=submit]:active {
 
 
 @media screen and (min-width:430px) {
-    .homepage-single-work {
+    .homepage-single-work,
+    .homepage-single-work-all {
         width: 350px;
     }
 
@@ -803,7 +872,8 @@ input[type=submit]:active {
     } */
 
     /* Work */
-    .homepage-work {
+    .homepage-work,
+    .homepage-work-all {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -811,9 +881,14 @@ input[type=submit]:active {
         margin: auto;
     }
 
+
     /* work-card */
     .homepage-single-work {
         width: 450px;
+    }
+
+    .homepage-single-work-all {
+        width: 280px;
     }
 
     .homepage-work-grid {
@@ -823,8 +898,8 @@ input[type=submit]:active {
     }
 
     .homepage-work-image img {
-        width: 200px;
-        height: 140px;
+        width: 210px;
+        height: 160px;
     }
 
     /* what can i do */
@@ -907,6 +982,7 @@ input[type=submit]:active {
         gap: 30px;
         padding: 0 2rem;
     }
+    
 
     .homepage-detail-single {
         display: flex;
@@ -949,7 +1025,8 @@ input[type=submit]:active {
 
     .single-one-work,
     .other-one-work,
-    .other-one-work-1 {
+    .other-one-work-1,
+    .social-one-work {
         margin: 0 auto;
         width: 700px;
     }
@@ -958,6 +1035,12 @@ input[type=submit]:active {
         margin: 0 auto;
         width: 800px;
     }
+
+    /* .all-photo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    } */
 
     /* handout */
     .handout {
@@ -971,6 +1054,7 @@ input[type=submit]:active {
         width: 200px;
         height: auto;
     }
+
 }
 
 @media screen and (min-width:1250px){
