@@ -228,7 +228,7 @@ nav {
 
 .homepage-single-work:hover,
 .homepage-single-work-all:hover {
-    box-shadow: 4px 4px 0 var(--color-main-color);
+    box-shadow: 5px 5px 0 var(--color-main-color);
 }
 
 .homepage-single-work:active,
@@ -236,8 +236,8 @@ nav {
     /* float: right; */
     box-shadow: 0 0;
 
-    left: 4px;
-    top: 4px;
+    left: 5px;
+    top: 5px;
 }
 
 .homepage-work-grid,
@@ -567,14 +567,14 @@ footer p {
 .projects-tags ul li a:hover,
 .projects-tags-social ul li a:hover,
 .userflow-figma:hover {
-    box-shadow: 2px 2px 0 var(--color-main-second);
+    box-shadow: 4px 4px 0 var(--color-main-second);
 }
 
 .projects-tags ul li a:active,
 .projects-tags-social ul li a:active,
 .userflow-figma:active{
-    top: 2px;
-    left: 2px;
+    top: 4px;
+    left: 4px;
     background-color: var(--color-main-second);
     box-shadow: 0 0;
 
@@ -758,16 +758,21 @@ input[type=submit]:active {
     width: 350px;
 }
 
-.social-one-work {
-    padding: 50px 0;
-}
-
+.social-one-work,
 .other-one-work {
     padding: 50px 0;
 }
 
 .other-one-work-1 {
     padding: 0 0 50px;
+}
+
+.marketing-graphic {
+    padding: 0;
+}
+
+figure {
+    margin: 0;
 }
 
 .single-project-description {
@@ -901,7 +906,7 @@ input[type=submit]:active {
 
     .homepage-work-image img {
         width: 210px;
-        height: 160px;
+        height: 150px;
     }
 
     /* what can i do */
