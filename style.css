@@ -163,6 +163,10 @@ nav {
     margin-bottom: 5rem;
 }
 
+.homepage-my-work .homepage-h3-center h3{
+    text-align: center;
+}
+
 .homepage-can-do,
 #design,
 #project,
@@ -172,9 +176,21 @@ nav {
     padding: 5rem 0;
 }
 
+#post,
+#graphic,
+#production,
+#social,
+#photo {
+    padding: 20px 0;
+}
+
 .homepage-aboutme {
     margin: 5rem 0;
     padding: 0 2rem;
+}
+
+.homepage-aboutme-text {
+    max-width: 700px;
 }
 
 /* Work */
@@ -187,8 +203,18 @@ nav {
     align-items: center;
 }
 
+.homepage-work-all {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
 /* work-card */
-.homepage-single-work {
+.homepage-single-work,
+.homepage-single-work-all {
     border: 1px solid var(--color-main-color);
     border-radius: 10px;
     padding: 10px;
@@ -200,19 +226,22 @@ nav {
     position: relative;
 }
 
-.homepage-single-work:hover {
-    box-shadow: 4px 4px 0 var(--color-main-color);
+.homepage-single-work:hover,
+.homepage-single-work-all:hover {
+    box-shadow: 5px 5px 0 var(--color-main-color);
 }
 
-.homepage-single-work:active {
+.homepage-single-work:active,
+.homepage-single-work-all:active {
     /* float: right; */
     box-shadow: 0 0;
 
-    left: 4px;
-    top: 4px;
+    left: 5px;
+    top: 5px;
 }
 
-.homepage-work-grid {
+.homepage-work-grid,
+.homepage-work-grid-all {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -292,7 +321,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 30px;
 }
 
@@ -320,6 +349,8 @@ nav {
 
 .homepage-profile-image img {
     width: 350px;
+    border: 1px solid var(--color-main-second);
+    border-radius: 1000px;
 }
 
 /* software */
@@ -334,6 +365,21 @@ nav {
     width: auto;
     height: 30px;
     max-width: 30px;
+}
+
+.project-software-logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.project-software-logo img {
+    width: auto;
+    height: 50px;
+    max-height: 50px;
 }
 
 /* Footer =============== */
@@ -438,12 +484,12 @@ footer p {
 }
 
 .other-header-title {
-    padding-top: 5rem;
+    padding: 5rem 10px 0;
 } 
 
 .other-header .other-header-title h1 {
     color: var(--color-main-second);
-    margin: 3rem 0;
+    margin: 2rem 0;
 } 
 
 .other-header .tags-all {
@@ -460,16 +506,27 @@ footer p {
     padding-top: 5rem;
 }
 
-#project,
+#design,
 #branding,
-#marketing {
+#marketing,
+.other-work,
+#post,
+#graphic,
+#production {
     background-color: var(--color-background);
 }
 
-.projects-tags ul{
+.projects-tags ul,
+.projects-tags-social ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    list-style: none;
+}
+
+
+.projects-tags ul {
     gap: 20px;
     justify-content: center;
     align-items: center;
@@ -478,11 +535,23 @@ footer p {
     list-style: none;
 }
 
-.projects-tags ul li {
+.projects-tags-social ul {
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+
+    list-style: none;
+}
+
+.projects-tags ul li,
+.projects-tags-social ul li {
     padding: 10px 0;
 }
 
-.projects-tags ul li a{
+.projects-tags ul li a,
+.projects-tags-social ul li a,
+.userflow-figma{
     padding: 10px;
     margin: 0;
     background-color: var(--color-main-color);
@@ -495,13 +564,17 @@ footer p {
     position: relative;
 }
 
-.projects-tags ul li a:hover {
-    box-shadow: 2px 2px 0 var(--color-main-second);
+.projects-tags ul li a:hover,
+.projects-tags-social ul li a:hover,
+.userflow-figma:hover {
+    box-shadow: 4px 4px 0 var(--color-main-second);
 }
 
-.projects-tags ul li a:active{
-    top: 2px;
-    left: 2px;
+.projects-tags ul li a:active,
+.projects-tags-social ul li a:active,
+.userflow-figma:active{
+    top: 4px;
+    left: 4px;
     background-color: var(--color-main-second);
     box-shadow: 0 0;
 
@@ -509,7 +582,8 @@ footer p {
     font-weight: 600;
 }
 
-.projects-tags p{
+.projects-tags p,
+.projects-tags-social p{
     text-align: center;
     margin-bottom: 20px;
 }
@@ -673,19 +747,63 @@ input[type=submit]:active {
 
 .single-project h4 {
     font-size: var(--h4-title);
-    color: rgb(rgb(191, 84, 84))
+    margin-bottom: 20px;
 }
 
 .single-one-work,
-.single-gallery {
-    padding: 0 2rem;
+.other-one-work,
+.other-one-work-1,
+.social-one-work {
+    margin: 0 auto;
+    width: 350px;
 }
 
-.single-one-work:nth-child(4) {
-    background-color: var(--color-background);
-    margin-top: 5rem;
-    padding: 5rem 2rem;
+.social-one-work,
+.other-one-work {
+    padding: 50px 0;
 }
+
+.other-one-work-1 {
+    padding: 0 0 50px;
+}
+
+.marketing-graphic {
+    padding: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+.single-project-description {
+    margin: 0 auto;
+    width: 350px;
+}
+
+.single-project-description p {
+    text-align: start;
+    margin-top: 2rem;
+}
+
+.single-project-link {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.single-project-link .proposal{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    color: var(--color-main-second);
+    font-weight: 600;
+}
+
+.proposal p {
+    margin: 0;
+}
+
 
 .other-header-title .tags {
     background-color: var(--color-main-color);
@@ -709,16 +827,50 @@ input[type=submit]:active {
     width: 100%;
 }
 
+.marketing-photo {
+    margin-bottom: 10px;
+}
+
+.marketing-photo p {
+    margin: 0;
+}
+
+.all-video {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
 .line {
     display: block;
     width:100%;
     border-top: 1px solid var(--color-main-color);
 }
 
-@media screen and (min-width:430px) {
-    .homepage-single-work {
-        width: 350px;
+.team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
+
+.team img {
+    width: 150px;
+    height: auto;
+}
+
+
+@media screen and (min-width:430px) {
+    .homepage-single-work,
+    .homepage-single-work-all {
+        width: 350px;
+    }
+
+    .single-project-description {
+        margin: 0 auto;
+        width: 400px;
+    }
 }
 @media screen and (min-width:650px){
     /* Header */
@@ -727,15 +879,23 @@ input[type=submit]:active {
     } */
 
     /* Work */
-    .homepage-work {
+    .homepage-work,
+    .homepage-work-all {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
+        max-width: 1000px;
+        margin: auto;
     }
+
 
     /* work-card */
     .homepage-single-work {
         width: 450px;
+    }
+
+    .homepage-single-work-all {
+        width: 280px;
     }
 
     .homepage-work-grid {
@@ -745,8 +905,8 @@ input[type=submit]:active {
     }
 
     .homepage-work-image img {
-        width: 200px;
-        height: 140px;
+        width: 210px;
+        height: 150px;
     }
 
     /* what can i do */
@@ -770,6 +930,7 @@ input[type=submit]:active {
         display: flex;
         gap: 30px;
         align-items: center;
+        justify-content: center;
     }
 
     .homepage-profile-image img {
@@ -828,6 +989,7 @@ input[type=submit]:active {
         gap: 30px;
         padding: 0 2rem;
     }
+    
 
     .homepage-detail-single {
         display: flex;
@@ -867,6 +1029,39 @@ input[type=submit]:active {
         display: flex;
         flex-direction: row;
     }
+
+    .single-one-work,
+    .other-one-work,
+    .other-one-work-1,
+    .social-one-work {
+        margin: 0 auto;
+        width: 700px;
+    }
+
+    .single-project-description {
+        margin: 0 auto;
+        width: 800px;
+    }
+
+    /* .all-photo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    } */
+
+    /* handout */
+    .handout {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    /* team */
+    .team img {
+        width: 200px;
+        height: auto;
+    }
+
 }
 
 @media screen and (min-width:1250px){
@@ -876,15 +1071,6 @@ input[type=submit]:active {
 
     .homepage-profile-image img {
         width: 300px;
-    }
-
-    .single-one-work,
-    .single-gallery {
-        padding: 0 10rem;
-    }
-
-    .single-one-work:nth-child(4) {
-        padding: 5rem 10rem;
     }
 }
 
