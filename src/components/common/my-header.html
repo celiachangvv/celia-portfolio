@@ -1,0 +1,68 @@
+<template component>
+  <link rel="stylesheet" href="/src/style/style.css" />
+  <link rel="stylesheet" href="/src/style/global.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <header>
+    <nav class="desktop-nav">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="/public/assets/logo/header-logo.svg" alt="Header logo"
+        /></a>
+      </div>
+      <ul class="link-menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/src/pages/">Projects</a></li>
+        <li><a href="/src/pages/">Contact</a></li>
+        <li>
+          <a href="/resume/SzemanChang-resume.pdf" download>Download Resume</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- mobile navigation bar -->
+    <nav class="mobile-nav">
+      <div class="logo">
+        <a href="/"
+          ><img src="/public/assets/logo/header-logo.svg" alt="Header logo"
+        /></a>
+      </div>
+      <!-- Mobile Menu -->
+      <button class="hamburger" on:click="addCount">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="link-menu-mobile">
+        <li><a href="/">Home</a></li>
+        <li><a href="pages/projects.html">Projects</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+        <li>
+          <a href="resume/SzemanChang-resume.pdf" download>Download Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <script>
+    export default {
+      data: {
+        count: 0
+      },
+      // TODO 
+      proto:{ 
+        addCount(){
+          const mobileMenu = document.querySelector('.link-menu-mobile');
+          console.log(mobileMenu)
+          // mobileMenu.style.right = mobileMenu.style.right === '0%' ? '-50%' : '0%';
+        }
+      }
+    };
+  </script>
+</template>
+
+
