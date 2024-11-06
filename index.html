@@ -4,8 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to Celia Portfolio</title>
-    <link rel="stylesheet" href="/src/style/style.css" />
-    <link rel="stylesheet" href="/src/style/global.css" />
+    <link
+      rel="stylesheet"
+      href="/src/style/style.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="/src/style/global.css"
+      media="print"
+      onload="this.media='all'"
+    />
     <link
       rel="icon"
       type="image/x-icon"
@@ -20,8 +30,14 @@
     />
 
     <!-- library  -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/kirakiray/ofa.js/dist/ofa.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/kirakiray/ofa.js/dist/ofa.min.js"
+      defer
+    ></script>
   </head>
   <l-m src="/src/components/common/my-layout.html"></l-m>
   <l-m src="/src/components/home/hero-img.html"></l-m>
@@ -32,9 +48,11 @@
   <body>
     <my-layout>
       <hero-img></hero-img>
+      <div style="margin-top: 5rem; margin-bottom: 5rem;">
       <my-work></my-work>
       <can-do></can-do>
       <about-me></about-me>
+    </div>
     </my-layout>
   </body>
 </html>
