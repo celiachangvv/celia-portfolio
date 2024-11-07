@@ -1,58 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Celia Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="/src/style/style.css"
-      media="print"
-      onload="this.media='all'"
-    />
-    <link
-      rel="stylesheet"
-      href="/src/style/global.css"
-      media="print"
-      onload="this.media='all'"
-    />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="./public/assets/logo/favicon-2.webp"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
-    <!-- library  -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"
-      defer
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/gh/kirakiray/ofa.js/dist/ofa.min.js"
-      defer
-    ></script>
-  </head>
-  <l-m src="/src/components/common/my-layout.html"></l-m>
-  <l-m src="/src/components/home/hero-img.html"></l-m>
-  <l-m src="/src/components/home/my-work.html"></l-m>
-  <l-m src="/src/components/home/can-do.html"></l-m>
-  <l-m src="/src/components/home/about-me.html"></l-m>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Celia Portfolio</title>
+  <link rel="stylesheet" href="/src/style/global.css" />
+  <link rel="icon" type="image/x-icon" href="./public/assets/logo/favicon-2.webp" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <body>
-    <my-layout>
-      <hero-img></hero-img>
-      <div style="margin-top: 5rem; margin-bottom: 5rem;">
+  <!-- library  -->
+  <script src="https://cdn.jsdelivr.net/gh/kirakiray/ofa.js/dist/ofa.min.js" defer></script>
+</head>
+<l-m src="/src/components/common/my-layout.html"></l-m>
+<l-m src="/src/components/home/hero-img.html"></l-m>
+<l-m src="/src/components/home/my-work.html"></l-m>
+<l-m src="/src/components/home/can-do.html"></l-m>
+<l-m src="/src/components/home/about-me.html"></l-m>
+
+<body>
+  <my-layout>
+    <hero-img></hero-img>
+    <div style="margin-top: 5rem; margin-bottom: 5rem;">
       <my-work></my-work>
       <can-do></can-do>
       <about-me></about-me>
     </div>
-    </my-layout>
-  </body>
+  </my-layout>
+</body>
 </html>
