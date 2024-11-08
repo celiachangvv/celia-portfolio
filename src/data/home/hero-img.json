@@ -2,5 +2,6 @@
     "title": "Hi, I'm ",
     "name": "Celia",
     "subtitle": "I am a UI/UX and graphic designer with digital marketing background.",
-    "description": "I love creating digital experiences that are both user-friendly and visually appealing."
+    "description": "I love creating digital experiences that are both user-friendly and visually appealing.",
+    "img":"/public/assets/images/header/header-background.gif"
 }

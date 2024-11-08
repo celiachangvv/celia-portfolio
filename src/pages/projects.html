@@ -1,378 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Celia Portfolio</title>
+<template page>
+    <l-m src="/src/components/common/my-layout.html"></l-m>
+    <l-m src="/src/components/projects/project-container.html"></l-m>
     <link rel="stylesheet" href="/src/style/style.css" />
     <link rel="stylesheet" href="/src/style/global.css" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="./public/assets/logo/favicon-2.webp"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <!-- library  -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/kirakiray/ofa.js/dist/ofa.min.js"></script>
-  </head>
-  <l-m src="/src/components/common/my-layout.html"></l-m>
-  <l-m src="/src/components/home/hero-img.html"></l-m>
-  <l-m src="/src/components/home/my-work.html"></l-m>
-  <l-m src="/src/components/home/can-do.html"></l-m>
-  <l-m src="/src/components/home/about-me.html"></l-m>
-
-  <body>
     <my-layout>
-      <header class="other-header">
-        <div class="other-header-title">
-          <p>Welcome to my little world</p>
-          <h1><span>My</span> Projects</h1>
-        </div>
-      </header>
 
-      <main>
-        <div class="projects-tags">
-          <p>Choose the category:</p>
-          <ul>
-            <li><a href="#project">UI/UX Design</a></li>
-            <li><a href="#design">Graphic Design</a></li>
-            <li><a href="#case-study">Case Study</a></li>
-            <!-- <li><a href="#branding">Branding</a></li> -->
-            <!-- <li><a href="#production">Production</a></li> -->
-            <li><a href="#marketing">Social Media Marketing</a></li>
-          </ul>
+        <div class="other-header">
+            <div class="other-header-title">
+                <p>{{info.pageTitle}}</p>
+                <h1><span>{{info.pageSubtitlep1}}</span>{{info.pageSubtitlep2}}</h1>
+            </div>
         </div>
 
-        <!-- Project -->
-        <div id="project">
-          <h2>UI/UX Design</h2>
 
-          <div class="projects-all-project">
-            <!-- Uniteer -->
-            <a href="../pages/project/uniteer.html">
-              <div class="homepage-single-work">
-                <div class="homepage-work-category">
-                  <h4>UI/UX Design</h4>
-                </div>
-                <div class="homepage-work-grid">
-                  <div class="homepage-work-image">
-                    <img
-                      src="/public/assets/images/project-card/uniteer/mockup-1.webp"
-                      alt=""
-                    />
-                  </div>
-                  <div class="homepage-work-title">
-                    <div class="homepage-work-title-margin">
-                      <h3>Uniteer</h3>
+        <main>
+            <div class="projects-tags">
+                <p>{{info.projectTypeTitle}}</p>
+                <ul>
+                    <x-fill :value="info.typeList">
+                        <li><a href="#project">{{$data}}</a></li>
+                    </x-fill>
+                </ul>
+            </div>
 
-                      <div class="tags-all">
-                        <div class="tags">
-                          <p>UI/UX Design</p>
-                        </div>
-                        <div class="tags">
-                          <p>APP</p>
-                        </div>
-                        <div class="tags">
-                          <p>Graphic Design</p>
-                        </div>
-                      </div>
-                    </div>
-                    <p>
-                      Uniteer is the app for parents and organizations track and
-                      manage children events and activities.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </a>
+            <!-- Project -->
+            <div id="project">
+                <h2>UI/UX Design</h2>
+                <div class="projects-all-project">
+                    <!-- Uniteer -->
+                    <!-- <project-container :data="projectList"></project-container> -->
 
-            <!-- Prisense -->
-            <a href="../pages/project/prisense.html">
-              <div class="homepage-single-work">
-                <div class="homepage-work-category">
-                  <h4>UI/UX Design</h4>
-                </div>
-                <div class="homepage-work-grid">
-                  <div class="homepage-work-image">
-                    <img
-                      src="/public/assets/images/single-project/project/prisense/cover.webp"
-                      alt="prisense"
-                    />
-                  </div>
-                  <div class="homepage-work-title">
-                    <div class="homepage-work-title-margin">
-                      <h3>Prisense</h3>
-
-                      <div class="tags-all">
-                        <div class="tags">
-                          <p>UI/UX Design</p>
-                        </div>
-                      </div>
-                    </div>
-                    <p>
-                      Prisense is the B2B website for small business companies,
-                      such as grocery stores, to check marketing prices.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <!-- Instaff -->
-            <a href="../pages/project/instaff.html">
-              <div class="homepage-single-work">
-                <div class="homepage-work-category">
-                  <h4>UI/UX Design</h4>
-                </div>
-                <div class="homepage-work-grid">
-                  <div class="homepage-work-image">
-                    <img
-                      src="/public/assets/images/single-project/project/instaff/cover.png"
-                      alt="Instaff cover"
-                    />
-                  </div>
-                  <div class="homepage-work-title">
-                    <div class="homepage-work-title-margin">
-                      <h3>Instaff</h3>
-
-                      <div class="tags-all">
-                        <div class="tags">
-                          <p>UI/UX Design</p>
-                        </div>
-                        <div class="tags">
-                          <p>Branding</p>
-                        </div>
-                      </div>
-                    </div>
-                    <p>
-                      Instaff can help employees and employers manage or apply
-                      for part-time or freelance jobs.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <!-- Design -->
-        <div id="design">
-          <h2>Graphic Design</h2>
-
-          <div class="projects-all-project">
-            <!-- Calendar -->
-            <a href="../pages/design/calendar.html">
-              <div class="homepage-single-work">
-                <div class="homepage-work-category">
-                  <h4>Graphic Design</h4>
-                </div>
-                <div class="homepage-work-grid">
-                  <div class="homepage-work-image">
-                    <img
-                      src="/public/assets/images/project-card/calendar/calendar-1.webp"
-                      alt=""
-                    />
-                  </div>
-                  <div class="homepage-work-title">
-                    <div class="homepage-work-title-margin">
-                      <h3>2022 Calendar</h3>
-
-                      <div class="tags-all">
-                        <div class="tags">
-                          <p>Marketing</p>
-                        </div>
-                        <div class="tags">
-                          <p>Graphic Design</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <p>
-                      The 2022 calendar is created with the company's venues as
-                      the theme, allowing users to learn more about the company.
-                    </p>
-                  </div>
-                </div>
-                <!-- <div class="homepage-work-button">
-                            <a href="pages/design/calendar.html">View Case</a>
-                        </div> -->
-              </div>
-            </a>
-
-            <!-- Magazine -->
-            <a href="../pages/design/magazine.html">
-              <div class="homepage-single-work">
-                <div class="homepage-work-category">
-                  <h4>Graphic Design</h4>
-                </div>
-                <div class="homepage-work-grid">
-                  <div class="homepage-work-image">
-                    <img
-                      src="/public/assets/images/single-project/design/magazine/mockup-1.webp"
-                      alt=""
-                    />
-                  </div>
-                  <div class="homepage-work-title">
-                    <div class="homepage-work-title-margin">
-                      <h3>Magazine</h3>
-
-                      <div class="tags-all">
-                        <div class="tags">
-                          <p>Graphic Design</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <p>
-                      Magazine design was one of my projects in school and I
-                      created some illustrations to help readers become engaged.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <!-- Other -->
-            <a href="../pages/design/other.html">
-              <div class="homepage-single-work">
-                <div class="homepage-work-category">
-                  <h4>Graphic Design</h4>
-                </div>
-                <div class="homepage-work-grid">
-                  <div class="homepage-work-image">
-                    <img
-                      src="/public/assets/images/other/other-cover.png"
-                      alt="Other Graphic Design"
-                    />
-                  </div>
-                  <div class="homepage-work-title">
-                    <div class="homepage-work-title-margin">
-                      <h3>Other Graphic</h3>
-
-                      <div class="tags-all">
-                        <div class="tags">
-                          <p>Graphic Design</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <p>
-                      Some graphic designs I created, including leaflet,
-                      illustrations, flyer, poster.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <button onclick="topFunction()" id="myBtn" title="Go to top">
-            <!-- <img src="../image/other/top.svg" alt="back to top"> -->
-            <i class="fa-solid fa-chevron-up"></i>
-          </button>
-        </div>
-
-        <!-- Case Study -->
-        <div id="case-study">
-          <h2>Case Study</h2>
-
-          <div class="projects-all-project">
-            <!-- Klook -->
-            <a href="../pages/case-study/klook.html">
-              <div class="homepage-single-work">
-                <div class="homepage-work-category">
-                  <h4>Case Study</h4>
-                </div>
-                <div class="homepage-work-grid">
-                  <div class="homepage-work-image">
-                    <img
-                      src="/public/assets/images/single-project/case-study/klook/mockup-1.webp"
-                      alt=""
-                    />
-                  </div>
-                  <div class="homepage-work-title">
-                    <div class="homepage-work-title-margin">
-                      <h3>Klook</h3>
-
-                      <div class="tags-all">
-                        <div class="tags">
-                          <p>UI/UX Design</p>
-                        </div>
-                        <div class="tags">
-                          <p>Rebranding</p>
-                        </div>
-                        <div class="tags">
-                          <p>Case Study</p>
-                        </div>
-                      </div>
-                    </div>
-                    <p>
-                      Klook helps users purchase and arrange trips. I made some
-                      changes to make it look more user-friendly.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <!-- Bookstore -->
-            <!-- <a href="../pages/case-study/bookstore.html">
-                    <div class="homepage-single-work">
+                    <!-- <a href="../pages/project/uniteer.html">
+                        <div class="homepage-single-work">
                             <div class="homepage-work-category">
-                                <h4>Case Study</h4>
+                                <h4>UI/UX Design</h4>
                             </div>
                             <div class="homepage-work-grid">
                                 <div class="homepage-work-image">
-                                    <img src="../image/single-project/case-study/bookstore/mockup.webp" alt="">
+                                    <img src="/public/assets/images/project-card/uniteer/mockup-1.webp" alt="">
                                 </div>
                                 <div class="homepage-work-title">
                                     <div class="homepage-work-title-margin">
-                                        <h3>Black Bond Books</h3>
+                                        <h3>Uniteer</h3>
 
                                         <div class="tags-all">
                                             <div class="tags">
                                                 <p>UI/UX Design</p>
                                             </div>
                                             <div class="tags">
-                                                <p>Case Study</p>
+                                                <p>APP</p>
+                                            </div>
+                                            <div class="tags">
+                                                <p>Graphic Design</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <p>Revitalized the online store for a prestigious bookstore, marrying aesthetics with functionality for an enhanced shopping experience.</p>
+                                    <p>Uniteer is the app for parents and organizations track and manage children events
+                                        and activities.</p>
                                 </div>
                             </div>
-                    </div>
-                </a> -->
-          </div>
-        </div>
+                        </div>
+                    </a> -->
 
-        <!-- branding -->
-        <!-- <div id="branding">
-
-            <h2>Branding</h2>
-
-            <div class="projects-all-project">
-                my website
-                <a href="../pages/branding/portfolio.html">
-                    <div class="homepage-single-work">
+                    <!-- Prisense -->
+                    <!-- <a href="../pages/project/prisense.html">
+                        <div class="homepage-single-work">
                             <div class="homepage-work-category">
-                                <h4>Branding</h4>
+                                <h4>UI/UX Design</h4>
                             </div>
                             <div class="homepage-work-grid">
                                 <div class="homepage-work-image">
-                                    <img src="../image/single-project/case-study/klook/mockup-1.webp" alt="">
+                                    <img src="/public/assets/images/single-project/project/prisense/cover.webp"
+                                        alt="prisense">
                                 </div>
                                 <div class="homepage-work-title">
                                     <div class="homepage-work-title-margin">
-                                        <h3>My Portfolio</h3>
+                                        <h3>Prisense</h3>
+
+                                        <div class="tags-all">
+                                            <div class="tags">
+                                                <p>UI/UX Design</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Prisense is the B2B website for small business companies, such as grocery stores,
+                                        to check marketing prices.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a> -->
+
+                    <!-- Instaff -->
+                    <!-- <a href="../pages/project/instaff.html">
+                        <div class="homepage-single-work">
+                            <div class="homepage-work-category">
+                                <h4>UI/UX Design</h4>
+                            </div>
+                            <div class="homepage-work-grid">
+                                <div class="homepage-work-image">
+                                    <img src="/public/assets/images/single-project/project/instaff/cover.png"
+                                        alt="Instaff cover">
+                                </div>
+                                <div class="homepage-work-title">
+                                    <div class="homepage-work-title-margin">
+                                        <h3>Instaff</h3>
 
                                         <div class="tags-all">
                                             <div class="tags">
@@ -381,121 +112,182 @@
                                             <div class="tags">
                                                 <p>Branding</p>
                                             </div>
-                                            <div class="tags">
-                                                <p>Graphic Design</p>
-                                            </div>
-                                            <div class="tags">
-                                                <p>HTML/CSS</p>
-                                            </div>
                                         </div>
                                     </div>
-                                    <p>Klook helps users purchase and arrange trips. I made some changes to make it look more human.</p>
+                                    <p>Instaff can help employees and employers manage or apply for part-time or
+                                        freelance jobs.</p>
                                 </div>
                             </div>
-                    </div>
-                </a>
+                        </div>
+                    </a> -->
+                </div>
 
             </div>
-        </div> -->
 
-        <!-- Production -->
-        <!-- <div id="production">
-            
-            <h2>Production</h2>
-
-            <div class="projects-all-project">
-
-                Challenge to hike to the company
-                <a href="">
-                    <div class="homepage-single-work">
+            <!-- Design -->
+            <div id="design">
+                <h2>Graphic Design</h2>
+                <div class="projects-all-project">
+                    <!-- Calendar -->
+                    <a href="../pages/design/calendar.html">
+                        <div class="homepage-single-work">
                             <div class="homepage-work-category">
-                                <h4>Production</h4>
+                                <h4>Graphic Design</h4>
                             </div>
                             <div class="homepage-work-grid">
                                 <div class="homepage-work-image">
-                                    <img src="../image/single-project/case-study/klook/mockup-1.webp" alt="">
+                                    <img src="/public/assets/images/project-card/calendar/calendar-1.webp" alt="">
                                 </div>
                                 <div class="homepage-work-title">
                                     <div class="homepage-work-title-margin">
-                                        <h3>Challenge: Hike to Company</h3>
+                                        <h3>2022 Calendar</h3>
 
                                         <div class="tags-all">
                                             <div class="tags">
-                                                <p>Production</p>
+                                                <p>Marketing</p>
+                                            </div>
+                                            <div class="tags">
+                                                <p>Graphic Design</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <p>Klook helps users purchase and arrange trips. I made some changes to make it look more human.</p>
+
+                                    <p>The 2022 calendar is created with the company's venues as the theme, allowing
+                                        users to learn more about the company.</p>
                                 </div>
                             </div>
-                    </div>
-                </a>
-                
+                            <!-- <div class="homepage-work-button">
+                                <a href="pages/design/calendar.html">View Case</a>
+                            </div> -->
+                        </div>
+                    </a>
+
+                    <!-- Magazine -->
+                    <a href="../pages/design/magazine.html">
+                        <div class="homepage-single-work">
+                            <div class="homepage-work-category">
+                                <h4>Graphic Design</h4>
+                            </div>
+                            <div class="homepage-work-grid">
+                                <div class="homepage-work-image">
+                                    <img src="/public/assets/images/single-project/design/magazine/mockup-1.webp"
+                                        alt="">
+                                </div>
+                                <div class="homepage-work-title">
+                                    <div class="homepage-work-title-margin">
+                                        <h3>Magazine</h3>
+
+                                        <div class="tags-all">
+                                            <div class="tags">
+                                                <p>Graphic Design</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <p>Magazine design was one of my projects in school and I created some illustrations
+                                        to help readers become engaged.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Other -->
+                    <a href="../pages/design/other.html">
+                        <div class="homepage-single-work">
+                            <div class="homepage-work-category">
+                                <h4>Graphic Design</h4>
+                            </div>
+                            <div class="homepage-work-grid">
+                                <div class="homepage-work-image">
+                                    <img src="/public/assets/images/other/other-cover.png" alt="Other Graphic Design">
+                                </div>
+                                <div class="homepage-work-title">
+                                    <div class="homepage-work-title-margin">
+                                        <h3>Other Graphic</h3>
+
+                                        <div class="tags-all">
+                                            <div class="tags">
+                                                <p>Graphic Design</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <p>Some graphic designs I created, including leaflet, illustrations, flyer, poster.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;">
+                    <i class="fa-solid fa-chevron-up"></i>
+                </button> -->
 
             </div>
 
-        </div> -->
+            <!-- Case Study -->
+            <div id="case-study">
+                <h2>Case Study</h2>
+                <div class="projects-all-project">
+                    <!-- Klook -->
+                    <a href="../pages/case-study/klook.html">
+                        <div class="homepage-single-work">
+                            <div class="homepage-work-category">
+                                <h4>Case Study</h4>
+                            </div>
+                            <div class="homepage-work-grid">
+                                <div class="homepage-work-image">
+                                    <img src="/public/assets/images/single-project/case-study/klook/mockup-1.webp"
+                                        alt="">
+                                </div>
+                                <div class="homepage-work-title">
+                                    <div class="homepage-work-title-margin">
+                                        <h3>Klook</h3>
 
-        <!-- Marketing  -->
-        <div id="marketing">
-          <h2>Social Media Marketing</h2>
+                                        <div class="tags-all">
+                                            <div class="tags">
+                                                <p>UI/UX Design</p>
+                                            </div>
+                                            <div class="tags">
+                                                <p>Rebranding</p>
+                                            </div>
+                                            <div class="tags">
+                                                <p>Case Study</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Klook helps users purchase and arrange trips. I made some changes to make it look
+                                        more user-friendly.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
 
-          <div class="projects-all-project">
-            <!-- Paragon -->
-            <a href="../pages/marketing/social-media-post.html">
-              <div class="homepage-single-work">
-                <div class="homepage-work-category">
-                  <h4>Social Media Marketing</h4>
+
                 </div>
-                <div class="homepage-work-grid">
-                  <div class="homepage-work-image">
-                    <img
-                      src="/public/assets/images/single-project/marketing/social-media-post/mockup-1.webp"
-                      alt=""
-                    />
-                  </div>
-                  <div class="homepage-work-title">
-                    <div class="homepage-work-title-margin">
-                      <h3>Paragon Asia</h3>
 
-                      <div class="tags-all">
-                        <div class="tags">
-                          <p>Marketing</p>
-                        </div>
-                        <div class="tags">
-                          <p>Graphic Design</p>
-                        </div>
-                        <div class="tags">
-                          <p>Social Media Management</p>
-                        </div>
-                        <div class="tags">
-                          <p>Production</p>
-                        </div>
-                      </div>
-                    </div>
-                    <p>
-                      Paragon Asia is a co-working space company, and I am
-                      responsible for managing and creating content on all
-                      social media platforms as well as handling advertising.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </a>
+            </div>
 
-            <!-- Fastmagca -->
-            <!-- <a href="../pages/marketing/social-media-post.html">
-                    <div class="homepage-single-work">
+            <!-- Marketing  -->
+            <div id="marketing">
+                <h2>Social Media Marketing</h2>
+                <div class="projects-all-project">
+                    <!-- Paragon -->
+                    <a href="../pages/marketing/social-media-post.html">
+                        <div class="homepage-single-work">
                             <div class="homepage-work-category">
                                 <h4>Social Media Marketing</h4>
                             </div>
                             <div class="homepage-work-grid">
                                 <div class="homepage-work-image">
-                                    <img src="../image/single-project/marketing/social-media-post/mockup-1.webp" alt="">
+                                    <img src="/public/assets/images/single-project/marketing/social-media-post/mockup-1.webp"
+                                        alt="">
                                 </div>
                                 <div class="homepage-work-title">
                                     <div class="homepage-work-title-margin">
-                                        <h3>Fastmag</h3>
+                                        <h3>Paragon Asia</h3>
 
                                         <div class="tags-all">
                                             <div class="tags">
@@ -507,17 +299,37 @@
                                             <div class="tags">
                                                 <p>Social Media Management</p>
                                             </div>
+                                            <div class="tags">
+                                                <p>Production</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <p>Paragon Asia is a co-working space company, and I am responsible for managing and creating content on all social media platforms as well as handling advertising.</p>
+                                    <p>Paragon Asia is a co-working space company, and I am responsible for managing and
+                                        creating content on all social media platforms as well as handling advertising.
+                                    </p>
                                 </div>
                             </div>
-                    </div>
-                </a> -->
-            <!-- TODO  up icon event  and info render-->
-          </div>
-        </div>
-      </main>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </main>
+
+
     </my-layout>
-  </body>
-</html>
+    <script>
+        export default {
+            data: {
+                info: {},
+                projectList:[]
+            },
+            async ready() {
+                const data = await fetch("/src/data/projects/data-projects.json").then((e) => e.json());
+                this.info = data;
+              
+            },
+        };
+    </script>
+</template>

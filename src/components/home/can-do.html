@@ -2,50 +2,40 @@
   <link rel="stylesheet" href="/src/style/style.css" />
   <link rel="stylesheet" href="/src/style/global.css" />
   <div class="homepage-can-do">
-    <h2>What can I help?</h2>
+    <h2>{{info.title}}</h2>
 
     <!-- illustration -->
     <div class="homepage-detail">
-      <!-- UI/UX design -->
-      <div class="homepage-detail-single">
-        <img src="/public/assets/images/homepage/what-can-do/can-do-1.webp" alt="" />
-        <!-- description -->
-        <div class="can-do-description">
-          <h4>UI/UX Design</h4>
-          <p>
-            I excel in UI/UX design, creating user-friendly experiences for
-            information, personal, and brochure websites, along with captivating
-            icon designs.
-          </p>
+      <x-fill :value="info.lists">
+        <div class="homepage-detail-single">
+          <img attr:src="$data.image" alt="" />
+          <!-- description -->
+          <div class="can-do-description">
+            <h4>{{$data.title}}</h4>
+            <p>
+              {{$data.description}}
+            </p>
+          </div>
         </div>
-      </div>
-
-      <!-- Graphic Design -->
-      <div class="homepage-detail-single">
-        <img src="/public/assets/images/homepage/what-can-do/can-do-2.webp" alt="" />
-        <!-- description -->
-        <div class="can-do-description">
-          <h4>Graphic Design</h4>
-          <p>
-            I specialize in graphic design, providing expertise in packaging,
-            posters, leaflets, typography, and infographics to enhance visual
-            communication.
-          </p>
-        </div>
-      </div>
-
-      <!-- Marketing -->
-      <div class="homepage-detail-single">
-        <img src="/public/assets/images/homepage/what-can-do/can-do-3.webp" alt="" />
-        <!-- description -->
-        <div class="can-do-description">
-          <h4>Digital Marketing</h4>
-          <p>
-            I excel in creating social media posts, visual and advertising
-            layouts, and implementing effective SEO strategies for success.
-          </p>
-        </div>
-      </div>
+      </x-fill>
     </div>
+
+
+
   </div>
+
+  <script>
+    export default ({ query }) => {
+      return {
+        data: {
+          info: {},
+        },
+
+        async ready() {
+          const data = await fetch("/src/data/home/can-do.json").then((e) => e.json());
+          this.info = data;
+        },
+      };
+    };
+  </script>
 </template>

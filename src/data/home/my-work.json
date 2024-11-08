@@ -1,0 +1,72 @@
+{
+    "title": "My Projects",
+    "projects": [
+        {
+            "title": "Uniteer",
+            "category": "UI/UX Design",
+            "image": "/public/assets/images/project-card/uniteer/mockup-1.webp",
+            "description": "Uniteer is the app for parents and organizations to track and manage children's events and activities.",
+            "tags": [
+                "UI/UX Design",
+                "APP",
+                "Graphic Design"
+            ],
+            "link": "pages/project/uniteer.html"
+        },
+        {
+            "title": "Prisense",
+            "category": "UI/UX Design",
+            "image": "/public/assets/images/single-project/project/prisense/cover.webp",
+            "description": "Prisense is a B2B website for small businesses to check marketing prices.",
+            "tags": [
+                "UI/UX Design",
+                "Graphic Design"
+            ],
+            "link": "pages/project/prisense.html"
+        },
+        {
+            "title": "Instaff",
+            "category": "UI/UX Design",
+            "image": "/public/assets/images/single-project/project/instaff/cover.png",
+            "description": "Instaff helps employees and employers manage or apply for part-time or freelance jobs.",
+            "tags": [
+                "UI/UX Design",
+                "Branding"
+            ],
+            "link": "pages/project/instaff.html"
+        },
+        {
+            "title": "Klook",
+            "category": "Case Study",
+            "image": "/public/assets/images/single-project/case-study/klook/mockup-1.webp",
+            "description": "Klook helps users purchase and arrange trips. I made some changes to make it more user-friendly.",
+            "tags": [
+                "UI/UX Design",
+                "Rebranding",
+                "Case Study"
+            ],
+            "link": "pages/design/magazine.html"
+        },
+        {
+            "title": "2022 Calendar",
+            "category": "Graphic Design",
+            "image": "/public/assets/images/project-card/calendar/calendar-1.webp",
+            "description": "The 2022 calendar was created with the company's venues as the theme, helping users learn more about the company.",
+            "tags": [
+                "Marketing",
+                "Graphic Design"
+            ],
+            "link": "pages/design/calendar.html"
+        },
+        {
+            "title": "Magazine",
+            "category": "Graphic Design",
+            "image": "/public/assets/images/single-project/design/magazine/mockup-1.webp",
+            "description": "Magazine design was one of my school projects, where I created illustrations to engage readers.",
+            "tags": [
+                "Graphic Design"
+            ],
+            "link": "/src/pages/projects.html"
+        }
+    ]
+}

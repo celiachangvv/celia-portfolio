@@ -2,66 +2,40 @@
   <link rel="stylesheet" href="/src/style/style.css" />
   <link rel="stylesheet" href="/src/style/global.css" />
   <div class="homepage-aboutme">
-    <h2>About Me</h2>
-
+    <h2>{{info.title}}</h2>
     <div class="homepage-aboutme-row">
       <div class="homepage-profile-image">
-        <img src="/public/assets/images/about-me/about-me-1.png" alt="" />
+        <img attr:src="info.profileImage" alt="" />
       </div>
       <div class="homepage-about-me-description">
         <div class="homepage-aboutme-text">
-          <p>Thank you for visiting my portfolio website!</p>
-          <p>
-            My name is Sze Man Chang, and you can call me Celia &#128515; I am a
-            UI/UX and graphic designer with digital marketing background. I love
-            creating digital experiences that are both user-friendly and
-            visually appealing. I believe in the power of design to make ideas
-            come to life and drive real results. Let's work together to create
-            designs that engage, inform, and inspire.
-          </p>
+
+          <x-fill :value="info.description">
+            <p>{{$data}}</p>
+          </x-fill>
         </div>
         <div>
-          <h4>My Skills</h4>
+          <h4>{{info.skillsTitle}}</h4>
           <div class="homepage-software-logo">
-            <img
-              src="/public/assets/images//about-me/software/Adobe-Illustrator-Icon.png"
-              alt=""
-            />
-            <img
-              src="/public/assets/images//about-me/software/Adobe_Photoshop_CC_icon.svg.png"
-              alt=""
-            />
-            <img
-              src="/public/assets/images//about-me/software/1667px-Figma-logo.svg.png"
-              alt=""
-            />
-            <img
-              src="/public/assets/images//about-me/software/WordPress_blue_logo.svg.png"
-              alt=""
-            />
-            <img
-              src="/public/assets/images//about-me/software/Adobe_InDesign_CC_icon.svg.png"
-              alt=""
-            />
-            <img
-              src="/public/assets/images//about-me/software/Adobe_Premiere_Pro_CC_icon.svg.png"
-              alt=""
-            />
-            <img
-              src="/public/assets/images//about-me/software/Adobe_After_Effects_CC_icon.svg.png"
-              alt=""
-            />
-            <img
-              src="/public/assets/images//about-me/software/HTML5_logo_and_wordmark.svg.png"
-              alt=""
-            />
-            <img
-              src="/public/assets/images//about-me/software/CSS3_logo_and_wordmark.svg.png"
-              alt=""
-            />
+            <x-fill :value="info.skills">
+              <img attr:src="$data" alt="">
+            </x-fill>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <script>
+    export default ({ query }) => {
+      return {
+        data: {
+          info: {},
+        },
+        async ready() {
+          const data = await fetch("/src/data/home/about-me.json").then((e) => e.json());
+          this.info = data;
+        },
+      };
+    };
+  </script>
 </template>

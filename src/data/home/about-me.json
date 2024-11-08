@@ -1,0 +1,20 @@
+{
+  "title": "About Me",
+  "profileImage": "/public/assets/images/about-me/about-me-1.png",
+  "description": [
+    "Thank you for visiting my portfolio website!",
+    "My name is Sze Man Chang, and you can call me Celia 😊 I am a UI/UX and graphic designer with a digital marketing background. I love creating digital experiences that are both user-friendly and visually appealing. I believe in the power of design to make ideas come to life and drive real results. Let's work together to create designs that engage, inform, and inspire."
+  ],
+  "skillsTitle": "My Skills",
+  "skills": [
+    "/public/assets/images/about-me/software/Adobe-Illustrator-Icon.png",
+    "/public/assets/images/about-me/software/Adobe_Photoshop_CC_icon.svg.png",
+    "/public/assets/images/about-me/software/1667px-Figma-logo.svg.png",
+    "/public/assets/images/about-me/software/WordPress_blue_logo.svg.png",
+    "/public/assets/images/about-me/software/Adobe_InDesign_CC_icon.svg.png",
+    "/public/assets/images/about-me/software/Adobe_Premiere_Pro_CC_icon.svg.png",
+    "/public/assets/images/about-me/software/Adobe_After_Effects_CC_icon.svg.png",
+    "/public/assets/images/about-me/software/HTML5_logo_and_wordmark.svg.png",
+    "/public/assets/images/about-me/software/CSS3_logo_and_wordmark.svg.png"
+  ]
+}
