@@ -27,99 +27,36 @@
             <div id="project">
                 <h2>UI/UX Design</h2>
                 <div class="projects-all-project">
-                    <!-- Uniteer -->
-                    <!-- <project-container :data="projectList"></project-container> -->
-
-                    <!-- <a href="../pages/project/uniteer.html">
-                        <div class="homepage-single-work">
-                            <div class="homepage-work-category">
-                                <h4>UI/UX Design</h4>
-                            </div>
-                            <div class="homepage-work-grid">
-                                <div class="homepage-work-image">
-                                    <img src="/public/assets/images/project-card/uniteer/mockup-1.webp" alt="">
+                    <x-fill :value="info.uiDesign">
+                        <a href="../pages/project/uniteer.html">
+                            <div class="homepage-single-work">
+                                <div class="homepage-work-category">
+                                    <h4>UI/UX Design</h4>
                                 </div>
-                                <div class="homepage-work-title">
-                                    <div class="homepage-work-title-margin">
-                                        <h3>Uniteer</h3>
+                                <div class="homepage-work-grid">
+                                    <div class="homepage-work-image">
+                                        <img attr:src="$data.image" alt="">
+                                    </div>
+                                    <div class="homepage-work-title">
+                                        <div class="homepage-work-title-margin">
+                                            <h3>{{$data.title}}</h3>
 
-                                        <div class="tags-all">
-                                            <div class="tags">
-                                                <p>UI/UX Design</p>
-                                            </div>
-                                            <div class="tags">
-                                                <p>APP</p>
-                                            </div>
-                                            <div class="tags">
-                                                <p>Graphic Design</p>
+                                            <div class="tags-all">
+                                                <template is="replace-temp">
+                                                    <x-fill :value="$data.tags">
+                                                        <div class="tags">
+                                                            <p>{{$data}}</p>
+                                                        </div>
+                                                    </x-fill>
+                                                </template>
                                             </div>
                                         </div>
+                                        <p>{{$data.description}}</p>
                                     </div>
-                                    <p>Uniteer is the app for parents and organizations track and manage children events
-                                        and activities.</p>
                                 </div>
                             </div>
-                        </div>
-                    </a> -->
-
-                    <!-- Prisense -->
-                    <!-- <a href="../pages/project/prisense.html">
-                        <div class="homepage-single-work">
-                            <div class="homepage-work-category">
-                                <h4>UI/UX Design</h4>
-                            </div>
-                            <div class="homepage-work-grid">
-                                <div class="homepage-work-image">
-                                    <img src="/public/assets/images/single-project/project/prisense/cover.webp"
-                                        alt="prisense">
-                                </div>
-                                <div class="homepage-work-title">
-                                    <div class="homepage-work-title-margin">
-                                        <h3>Prisense</h3>
-
-                                        <div class="tags-all">
-                                            <div class="tags">
-                                                <p>UI/UX Design</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p>Prisense is the B2B website for small business companies, such as grocery stores,
-                                        to check marketing prices.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a> -->
-
-                    <!-- Instaff -->
-                    <!-- <a href="../pages/project/instaff.html">
-                        <div class="homepage-single-work">
-                            <div class="homepage-work-category">
-                                <h4>UI/UX Design</h4>
-                            </div>
-                            <div class="homepage-work-grid">
-                                <div class="homepage-work-image">
-                                    <img src="/public/assets/images/single-project/project/instaff/cover.png"
-                                        alt="Instaff cover">
-                                </div>
-                                <div class="homepage-work-title">
-                                    <div class="homepage-work-title-margin">
-                                        <h3>Instaff</h3>
-
-                                        <div class="tags-all">
-                                            <div class="tags">
-                                                <p>UI/UX Design</p>
-                                            </div>
-                                            <div class="tags">
-                                                <p>Branding</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p>Instaff can help employees and employers manage or apply for part-time or
-                                        freelance jobs.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a> -->
+                        </a>
+                    </x-fill>
                 </div>
 
             </div>
@@ -128,99 +65,37 @@
             <div id="design">
                 <h2>Graphic Design</h2>
                 <div class="projects-all-project">
-                    <!-- Calendar -->
-                    <a href="../pages/design/calendar.html">
-                        <div class="homepage-single-work">
-                            <div class="homepage-work-category">
-                                <h4>Graphic Design</h4>
-                            </div>
-                            <div class="homepage-work-grid">
-                                <div class="homepage-work-image">
-                                    <img src="/public/assets/images/project-card/calendar/calendar-1.webp" alt="">
+                    <x-fill :value="info.graphicDesign">
+                        <a href="../pages/project/uniteer.html">
+                            <div class="homepage-single-work">
+                                <div class="homepage-work-category">
+                                    <h4>UI/UX Design</h4>
                                 </div>
-                                <div class="homepage-work-title">
-                                    <div class="homepage-work-title-margin">
-                                        <h3>2022 Calendar</h3>
+                                <div class="homepage-work-grid">
+                                    <div class="homepage-work-image">
+                                        <img attr:src="$data.image" alt="">
+                                    </div>
+                                    <div class="homepage-work-title">
+                                        <div class="homepage-work-title-margin">
+                                            <h3>{{$data.title}}</h3>
 
-                                        <div class="tags-all">
-                                            <div class="tags">
-                                                <p>Marketing</p>
-                                            </div>
-                                            <div class="tags">
-                                                <p>Graphic Design</p>
+                                            <div class="tags-all">
+                                                <template is="replace-temp">
+                                                    <x-fill :value="$data.tags">
+                                                        <div class="tags">
+                                                            <p>{{$data}}</p>
+                                                        </div>
+                                                    </x-fill>
+                                                </template>
                                             </div>
                                         </div>
+                                        <p>{{$data.description}}</p>
                                     </div>
-
-                                    <p>The 2022 calendar is created with the company's venues as the theme, allowing
-                                        users to learn more about the company.</p>
                                 </div>
                             </div>
-                            <!-- <div class="homepage-work-button">
-                                <a href="pages/design/calendar.html">View Case</a>
-                            </div> -->
-                        </div>
-                    </a>
-
-                    <!-- Magazine -->
-                    <a href="../pages/design/magazine.html">
-                        <div class="homepage-single-work">
-                            <div class="homepage-work-category">
-                                <h4>Graphic Design</h4>
-                            </div>
-                            <div class="homepage-work-grid">
-                                <div class="homepage-work-image">
-                                    <img src="/public/assets/images/single-project/design/magazine/mockup-1.webp"
-                                        alt="">
-                                </div>
-                                <div class="homepage-work-title">
-                                    <div class="homepage-work-title-margin">
-                                        <h3>Magazine</h3>
-
-                                        <div class="tags-all">
-                                            <div class="tags">
-                                                <p>Graphic Design</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <p>Magazine design was one of my projects in school and I created some illustrations
-                                        to help readers become engaged.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Other -->
-                    <a href="../pages/design/other.html">
-                        <div class="homepage-single-work">
-                            <div class="homepage-work-category">
-                                <h4>Graphic Design</h4>
-                            </div>
-                            <div class="homepage-work-grid">
-                                <div class="homepage-work-image">
-                                    <img src="/public/assets/images/other/other-cover.png" alt="Other Graphic Design">
-                                </div>
-                                <div class="homepage-work-title">
-                                    <div class="homepage-work-title-margin">
-                                        <h3>Other Graphic</h3>
-
-                                        <div class="tags-all">
-                                            <div class="tags">
-                                                <p>Graphic Design</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <p>Some graphic designs I created, including leaflet, illustrations, flyer, poster.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
+                        </a>
+                    </x-fill>
                 </div>
-
                 <!-- <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;">
                     <i class="fa-solid fa-chevron-up"></i>
                 </button> -->
@@ -231,89 +106,73 @@
             <div id="case-study">
                 <h2>Case Study</h2>
                 <div class="projects-all-project">
-                    <!-- Klook -->
-                    <a href="../pages/case-study/klook.html">
-                        <div class="homepage-single-work">
-                            <div class="homepage-work-category">
-                                <h4>Case Study</h4>
-                            </div>
-                            <div class="homepage-work-grid">
-                                <div class="homepage-work-image">
-                                    <img src="/public/assets/images/single-project/case-study/klook/mockup-1.webp"
-                                        alt="">
+                    <x-fill :value="info.caseStudy">
+                        <a href="../pages/project/uniteer.html">
+                            <div class="homepage-single-work">
+                                <div class="homepage-work-category">
+                                    <h4>UI/UX Design</h4>
                                 </div>
-                                <div class="homepage-work-title">
-                                    <div class="homepage-work-title-margin">
-                                        <h3>Klook</h3>
+                                <div class="homepage-work-grid">
+                                    <div class="homepage-work-image">
+                                        <img attr:src="$data.image" alt="">
+                                    </div>
+                                    <div class="homepage-work-title">
+                                        <div class="homepage-work-title-margin">
+                                            <h3>{{$data.title}}</h3>
 
-                                        <div class="tags-all">
-                                            <div class="tags">
-                                                <p>UI/UX Design</p>
-                                            </div>
-                                            <div class="tags">
-                                                <p>Rebranding</p>
-                                            </div>
-                                            <div class="tags">
-                                                <p>Case Study</p>
+                                            <div class="tags-all">
+                                                <template is="replace-temp">
+                                                    <x-fill :value="$data.tags">
+                                                        <div class="tags">
+                                                            <p>{{$data}}</p>
+                                                        </div>
+                                                    </x-fill>
+                                                </template>
                                             </div>
                                         </div>
+                                        <p>{{$data.description}}</p>
                                     </div>
-                                    <p>Klook helps users purchase and arrange trips. I made some changes to make it look
-                                        more user-friendly.</p>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-
-
+                        </a>
+                    </x-fill>
                 </div>
-
             </div>
 
             <!-- Marketing  -->
             <div id="marketing">
                 <h2>Social Media Marketing</h2>
                 <div class="projects-all-project">
-                    <!-- Paragon -->
-                    <a href="../pages/marketing/social-media-post.html">
-                        <div class="homepage-single-work">
-                            <div class="homepage-work-category">
-                                <h4>Social Media Marketing</h4>
-                            </div>
-                            <div class="homepage-work-grid">
-                                <div class="homepage-work-image">
-                                    <img src="/public/assets/images/single-project/marketing/social-media-post/mockup-1.webp"
-                                        alt="">
+                    <x-fill :value="info.socialMediaMarketing">
+                        <a href="../pages/project/uniteer.html">
+                            <div class="homepage-single-work">
+                                <div class="homepage-work-category">
+                                    <h4>UI/UX Design</h4>
                                 </div>
-                                <div class="homepage-work-title">
-                                    <div class="homepage-work-title-margin">
-                                        <h3>Paragon Asia</h3>
-
-                                        <div class="tags-all">
-                                            <div class="tags">
-                                                <p>Marketing</p>
-                                            </div>
-                                            <div class="tags">
-                                                <p>Graphic Design</p>
-                                            </div>
-                                            <div class="tags">
-                                                <p>Social Media Management</p>
-                                            </div>
-                                            <div class="tags">
-                                                <p>Production</p>
+                                <div class="homepage-work-grid">
+                                    <div class="homepage-work-image">
+                                        <img attr:src="$data.image" alt="">
+                                    </div>
+                                    <div class="homepage-work-title">
+                                        <div class="homepage-work-title-margin">
+                                            <h3>{{$data.title}}</h3>
+                                            <div class="tags-all">
+                                                <template is="replace-temp">
+                                                    <x-fill :value="$data.tags">
+                                                        <div class="tags">
+                                                            <p>{{$data}}</p>
+                                                        </div>
+                                                    </x-fill>
+                                                </template>
                                             </div>
                                         </div>
+                                        <p>{{$data.description}}</p>
                                     </div>
-                                    <p>Paragon Asia is a co-working space company, and I am responsible for managing and
-                                        creating content on all social media platforms as well as handling advertising.
-                                    </p>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-
+                        </a>
+                    </x-fill>
                 </div>
-
             </div>
         </main>
 
@@ -323,13 +182,14 @@
         export default {
             data: {
                 info: {},
-                projectList:[]
             },
+
             async ready() {
                 const data = await fetch("/src/data/projects/data-projects.json").then((e) => e.json());
-                this.info = data;
-              
-            },
+                Object.assign(this.info, data);
+            }
+
+
         };
     </script>
 </template>

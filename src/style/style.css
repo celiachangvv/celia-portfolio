@@ -209,6 +209,10 @@ nav {
 }
 
 /* work-card */
+.homepage-single-work{
+  height: 100%;
+}
+
 .homepage-single-work,
 .homepage-single-work-all {
   border: 1px solid var(--color-main-color);

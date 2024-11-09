@@ -9,95 +9,93 @@
     "Case Study",
     "Social Media Marketing"
   ],
-  "info": {
-    "UI/UX Design": [
-      {
-        "title": "Uniteer",
-        "link": "../pages/project/uniteer.html",
-        "image": "/public/assets/images/project-card/uniteer/mockup-1.webp",
-        "tags": [
-          "UI/UX Design",
-          "APP",
-          "Graphic Design"
-        ],
-        "description": "Uniteer is the app for parents and organizations to track and manage children's events and activities."
-      },
-      {
-        "title": "Prisense",
-        "link": "../pages/project/prisense.html",
-        "image": "/public/assets/images/single-project/project/prisense/cover.webp",
-        "tags": [
-          "UI/UX Design"
-        ],
-        "description": "Prisense is a B2B website for small business companies to check marketing prices."
-      },
-      {
-        "title": "Instaff",
-        "link": "../pages/project/instaff.html",
-        "image": "/public/assets/images/single-project/project/instaff/cover.png",
-        "tags": [
-          "UI/UX Design",
-          "Branding"
-        ],
-        "description": "Instaff helps employees and employers manage or apply for part-time or freelance jobs."
-      }
-    ],
-    "Graphic Design": [
-      {
-        "title": "2022 Calendar",
-        "link": "../pages/design/calendar.html",
-        "image": "/public/assets/images/project-card/calendar/calendar-1.webp",
-        "tags": [
-          "Marketing",
-          "Graphic Design"
-        ],
-        "description": "The 2022 calendar is created with the company's venues as the theme, allowing users to learn more about the company."
-      },
-      {
-        "title": "Magazine",
-        "link": "../pages/design/magazine.html",
-        "image": "/public/assets/images/single-project/design/magazine/mockup-1.webp",
-        "tags": [
-          "Graphic Design"
-        ],
-        "description": "Magazine design was one of my school projects, and I created some illustrations to engage readers."
-      },
-      {
-        "title": "Other Graphic",
-        "link": "../pages/design/other.html",
-        "image": "/public/assets/images/other/other-cover.png",
-        "tags": [
-          "Graphic Design"
-        ],
-        "description": "Some graphic designs I created, including leaflets, illustrations, flyers, and posters."
-      }
-    ],
-    "Case Study": [
-      {
-        "title": "Klook",
-        "link": "../pages/case-study/klook.html",
-        "image": "/public/assets/images/single-project/case-study/klook/mockup-1.webp",
-        "tags": [
-          "UI/UX Design",
-          "Rebranding",
-          "Case Study"
-        ],
-        "description": "Klook helps users purchase and arrange trips. I made some changes to make it more user-friendly."
-      }
-    ],
-    "Social Media Marketing": [
-      {
-        "title": "Paragon Asia",
-        "link": "../pages/marketing/social-media-post.html",
-        "image": "/public/assets/images/single-project/marketing/social-media-post/mockup-1.webp",
-        "tags": [
-          "Marketing",
-          "Graphic Design",
-          "Social Media Management",
-          "Production"
-        ],
-        "description": "Paragon Asia is a co-working space company. I managed and created content for all social media platforms and handled advertising."
-      }
-    ]
-  }
+  "uiDesign": [
+    {
+      "title": "Uniteer",
+      "link": "../pages/project/uniteer.html",
+      "image": "/public/assets/images/project-card/uniteer/mockup-1.webp",
+      "tags": [
+        "UI/UX Design",
+        "APP",
+        "Graphic Design"
+      ],
+      "description": "Uniteer is the app for parents and organizations to track and manage children's events and activities."
+    },
+    {
+      "title": "Prisense",
+      "link": "../pages/project/prisense.html",
+      "image": "/public/assets/images/single-project/project/prisense/cover.webp",
+      "tags": [
+        "UI/UX Design"
+      ],
+      "description": "Prisense is a B2B website for small business companies to check marketing prices."
+    },
+    {
+      "title": "Instaff",
+      "link": "../pages/project/instaff.html",
+      "image": "/public/assets/images/single-project/project/instaff/cover.png",
+      "tags": [
+        "UI/UX Design",
+        "Branding"
+      ],
+      "description": "Instaff helps employees and employers manage or apply for part-time or freelance jobs."
+    }
+  ],
+  "graphicDesign": [
+    {
+      "title": "2022 Calendar",
+      "link": "../pages/design/calendar.html",
+      "image": "/public/assets/images/project-card/calendar/calendar-1.webp",
+      "tags": [
+        "Marketing",
+        "Graphic Design"
+      ],
+      "description": "The 2022 calendar is created with the company's venues as the theme, allowing users to learn more about the company."
+    },
+    {
+      "title": "Magazine",
+      "link": "../pages/design/magazine.html",
+      "image": "/public/assets/images/single-project/design/magazine/mockup-1.webp",
+      "tags": [
+        "Graphic Design"
+      ],
+      "description": "Magazine design was one of my school projects, and I created some illustrations to engage readers."
+    },
+    {
+      "title": "Other Graphic",
+      "link": "../pages/design/other.html",
+      "image": "/public/assets/images/other/other-cover.png",
+      "tags": [
+        "Graphic Design"
+      ],
+      "description": "Some graphic designs I created, including leaflets, illustrations, flyers, and posters."
+    }
+  ],
+  "caseStudy": [
+    {
+      "title": "Klook",
+      "link": "../pages/case-study/klook.html",
+      "image": "/public/assets/images/single-project/case-study/klook/mockup-1.webp",
+      "tags": [
+        "UI/UX Design",
+        "Rebranding",
+        "Case Study"
+      ],
+      "description": "Klook helps users purchase and arrange trips. I made some changes to make it more user-friendly."
+    }
+  ],
+  "socialMediaMarketing": [
+    {
+      "title": "Paragon Asia",
+      "link": "../pages/marketing/social-media-post.html",
+      "image": "/public/assets/images/single-project/marketing/social-media-post/mockup-1.webp",
+      "tags": [
+        "Marketing",
+        "Graphic Design",
+        "Social Media Management",
+        "Production"
+      ],
+      "description": "Paragon Asia is a co-working space company. I managed and created content for all social media platforms and handled advertising."
+    }
+  ]
 }
