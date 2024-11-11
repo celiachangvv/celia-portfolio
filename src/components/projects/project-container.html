@@ -1,0 +1,41 @@
+<template component>
+    <link rel="stylesheet" href="/src/style/style.css" />
+    <link rel="stylesheet" href="/src/style/global.css" />
+    <a attr:href="projectinfo.link">
+        <div class="homepage-single-work">
+            <div class="homepage-work-category">
+                <h4>{{projectinfo.subTitle}}</h4>
+            </div>
+            <div class="homepage-work-grid">
+                <div class="homepage-work-image">
+                    <img attr:src="projectinfo.image" alt="">
+                </div>
+                <div class="homepage-work-title">
+                    <div class="homepage-work-title-margin">
+                        <h3>{{projectinfo.title}}</h3>
+
+                        <div class="tags-all">
+                            <template is="replace-temp">
+                                <x-fill :value="projectinfo.tags">
+                                    <div class="tags">
+                                        <p>{{$data}}</p>
+                                    </div>
+                                </x-fill>
+                            </template>
+                        </div>
+                    </div>
+                    <p>
+                        {{projectinfo.description}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </a>
+    <script>
+        export default {
+            data: {
+                projectinfo: {},
+            }
+        };
+    </script>
+</template>

@@ -12,6 +12,7 @@
   "uiDesign": [
     {
       "title": "Uniteer",
+      "subTitle": "UI/UX Design",
       "link": "../pages/project/uniteer.html",
       "image": "/public/assets/images/project-card/uniteer/mockup-1.webp",
       "tags": [
@@ -23,6 +24,7 @@
     },
     {
       "title": "Prisense",
+      "subTitle": "UI/UX Design",
       "link": "../pages/project/prisense.html",
       "image": "/public/assets/images/single-project/project/prisense/cover.webp",
       "tags": [
@@ -32,6 +34,7 @@
     },
     {
       "title": "Instaff",
+      "subTitle": "UI/UX Design",
       "link": "../pages/project/instaff.html",
       "image": "/public/assets/images/single-project/project/instaff/cover.png",
       "tags": [
@@ -44,6 +47,7 @@
   "graphicDesign": [
     {
       "title": "2022 Calendar",
+      "subTitle": "UI/UX Design",
       "link": "../pages/design/calendar.html",
       "image": "/public/assets/images/project-card/calendar/calendar-1.webp",
       "tags": [
@@ -54,6 +58,7 @@
     },
     {
       "title": "Magazine",
+      "subTitle": "UI/UX Design",
       "link": "../pages/design/magazine.html",
       "image": "/public/assets/images/single-project/design/magazine/mockup-1.webp",
       "tags": [
@@ -63,6 +68,7 @@
     },
     {
       "title": "Other Graphic",
+      "subTitle": "UI/UX Design",
       "link": "../pages/design/other.html",
       "image": "/public/assets/images/other/other-cover.png",
       "tags": [
@@ -74,6 +80,7 @@
   "caseStudy": [
     {
       "title": "Klook",
+      "subTitle": "UI/UX Design",
       "link": "../pages/case-study/klook.html",
       "image": "/public/assets/images/single-project/case-study/klook/mockup-1.webp",
       "tags": [
@@ -87,6 +94,7 @@
   "socialMediaMarketing": [
     {
       "title": "Paragon Asia",
+      "subTitle": "UI/UX Design",
       "link": "../pages/marketing/social-media-post.html",
       "image": "/public/assets/images/single-project/marketing/social-media-post/mockup-1.webp",
       "tags": [

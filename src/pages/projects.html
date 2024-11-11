@@ -25,75 +25,20 @@
 
             <!-- Project -->
             <div id="project">
-                <h2>UI/UX Design</h2>
+                <h2>{{info?.typeList?.[0] ?? 'loading'}}</h2>
                 <div class="projects-all-project">
                     <x-fill :value="info.uiDesign">
-                        <a href="../pages/project/uniteer.html">
-                            <div class="homepage-single-work">
-                                <div class="homepage-work-category">
-                                    <h4>UI/UX Design</h4>
-                                </div>
-                                <div class="homepage-work-grid">
-                                    <div class="homepage-work-image">
-                                        <img attr:src="$data.image" alt="">
-                                    </div>
-                                    <div class="homepage-work-title">
-                                        <div class="homepage-work-title-margin">
-                                            <h3>{{$data.title}}</h3>
-
-                                            <div class="tags-all">
-                                                <template is="replace-temp">
-                                                    <x-fill :value="$data.tags">
-                                                        <div class="tags">
-                                                            <p>{{$data}}</p>
-                                                        </div>
-                                                    </x-fill>
-                                                </template>
-                                            </div>
-                                        </div>
-                                        <p>{{$data.description}}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                        <project-container :projectinfo="$data"></project-container>
                     </x-fill>
                 </div>
-
             </div>
 
             <!-- Design -->
             <div id="design">
-                <h2>Graphic Design</h2>
+                <h2>{{info?.typeList?.[1] ?? 'loading'}}</h2>
                 <div class="projects-all-project">
                     <x-fill :value="info.graphicDesign">
-                        <a href="../pages/project/uniteer.html">
-                            <div class="homepage-single-work">
-                                <div class="homepage-work-category">
-                                    <h4>UI/UX Design</h4>
-                                </div>
-                                <div class="homepage-work-grid">
-                                    <div class="homepage-work-image">
-                                        <img attr:src="$data.image" alt="">
-                                    </div>
-                                    <div class="homepage-work-title">
-                                        <div class="homepage-work-title-margin">
-                                            <h3>{{$data.title}}</h3>
-
-                                            <div class="tags-all">
-                                                <template is="replace-temp">
-                                                    <x-fill :value="$data.tags">
-                                                        <div class="tags">
-                                                            <p>{{$data}}</p>
-                                                        </div>
-                                                    </x-fill>
-                                                </template>
-                                            </div>
-                                        </div>
-                                        <p>{{$data.description}}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                        <project-container :projectinfo="$data"></project-container>
                     </x-fill>
                 </div>
                 <!-- <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;">
@@ -104,73 +49,20 @@
 
             <!-- Case Study -->
             <div id="case-study">
-                <h2>Case Study</h2>
+                <h2>{{info?.typeList?.[2] ?? 'loading'}}</h2>
                 <div class="projects-all-project">
                     <x-fill :value="info.caseStudy">
-                        <a href="../pages/project/uniteer.html">
-                            <div class="homepage-single-work">
-                                <div class="homepage-work-category">
-                                    <h4>UI/UX Design</h4>
-                                </div>
-                                <div class="homepage-work-grid">
-                                    <div class="homepage-work-image">
-                                        <img attr:src="$data.image" alt="">
-                                    </div>
-                                    <div class="homepage-work-title">
-                                        <div class="homepage-work-title-margin">
-                                            <h3>{{$data.title}}</h3>
-
-                                            <div class="tags-all">
-                                                <template is="replace-temp">
-                                                    <x-fill :value="$data.tags">
-                                                        <div class="tags">
-                                                            <p>{{$data}}</p>
-                                                        </div>
-                                                    </x-fill>
-                                                </template>
-                                            </div>
-                                        </div>
-                                        <p>{{$data.description}}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                        <project-container :projectinfo="$data"></project-container>
                     </x-fill>
                 </div>
             </div>
 
             <!-- Marketing  -->
             <div id="marketing">
-                <h2>Social Media Marketing</h2>
+                <h2>{{info?.typeList?.[3] ?? 'loading'}}</h2>
                 <div class="projects-all-project">
                     <x-fill :value="info.socialMediaMarketing">
-                        <a href="../pages/project/uniteer.html">
-                            <div class="homepage-single-work">
-                                <div class="homepage-work-category">
-                                    <h4>UI/UX Design</h4>
-                                </div>
-                                <div class="homepage-work-grid">
-                                    <div class="homepage-work-image">
-                                        <img attr:src="$data.image" alt="">
-                                    </div>
-                                    <div class="homepage-work-title">
-                                        <div class="homepage-work-title-margin">
-                                            <h3>{{$data.title}}</h3>
-                                            <div class="tags-all">
-                                                <template is="replace-temp">
-                                                    <x-fill :value="$data.tags">
-                                                        <div class="tags">
-                                                            <p>{{$data}}</p>
-                                                        </div>
-                                                    </x-fill>
-                                                </template>
-                                            </div>
-                                        </div>
-                                        <p>{{$data.description}}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                        <project-container :projectinfo="$data"></project-container>
                     </x-fill>
                 </div>
             </div>
@@ -183,13 +75,12 @@
             data: {
                 info: {},
             },
-
             async ready() {
-                const data = await fetch("/src/data/projects/data-projects.json").then((e) => e.json());
-                Object.assign(this.info, data);
+                this.info = await fetch("/src/data/projects/data-projects.json").then((e) => e.json());
             }
 
 
         };
+
     </script>
 </template>
