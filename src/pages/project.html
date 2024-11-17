@@ -1,0 +1,25 @@
+<template page>
+    <l-m src="/src/components/common/my-layout.html"></l-m>
+    <l-m src="/src/components/projects/project-container.html"></l-m>
+    <link rel="stylesheet" href="/src/style/style.css" />
+    <link rel="stylesheet" href="/src/style/global.css" />
+    <l-m src="/src/components/home/md-template.html"></l-m>
+    <my-layout>
+        <main>
+            <md-template src="/src/data/markdown/Instaff/Instaff.md"></md-template>
+        </main>
+    </my-layout>
+    <script>
+        export default {
+            data: {
+                info: {},
+            },
+            async ready() {
+                // this.info = await fetch("/src/data/projects/data-projects.json").then((e) => e.json());
+            }
+
+
+        };
+
+    </script>
+</template>

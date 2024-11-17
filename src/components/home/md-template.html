@@ -1,0 +1,54 @@
+<template component>
+    <!-- <link rel="stylesheet" href="/src/style/modest.css" /> -->
+    <!-- <link rel="stylesheet" href="/src/style/normalize.css" /> -->
+    <link rel="stylesheet" href="/src/style/style.css" />
+    <link rel="stylesheet" href="/src/style/global.css" />
+    <style>
+        #md {
+            h2 {
+                text-align: left;
+            }
+
+            p {
+                margin: 0;
+            }
+
+            .single-project-description>p {
+                margin-top: 1.8rem;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+
+    <div id="md" :html="parseMarkdown(markdown)">
+    </div>
+
+    <script>
+        import { parse } from 'https://esm.sh/marked';
+
+        let srcChanged = async function (value) {
+            if (!value) {
+                return;
+            }
+            this.markdown = await fetch(value).then(r => r.text());
+        };
+
+        export default {
+            attrs: {
+                src: void 0,
+            },
+            data: {
+                markdown: ''
+            },
+            proto: {
+                parseMarkdown: parse
+            },
+            async ready() {
+                srcChanged = srcChanged.bind(this);
+            },
+            watch: {
+                src: srcChanged
+            }
+        };
+    </script>
+</template>
