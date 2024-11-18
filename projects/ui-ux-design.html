@@ -1,0 +1,32 @@
+<template page>
+    <l-m src="/src/components/common/my-layout.html"></l-m>
+    <l-m src="/src/components/projects/project-container.html"></l-m>
+    <link rel="stylesheet" href="/src/style/style.css" />
+    <link rel="stylesheet" href="/src/style/global.css" />
+    <l-m src="/src/components/home/md-template.html"></l-m>
+    <my-layout>
+        <main>
+            <md-template attr:src="info"></md-template>
+        </main>
+    </my-layout>
+    <script>
+        export default {
+            data: {
+                info: "",
+            },
+            async ready() {
+                setTimeout(() => {
+                    const hash = window.location.hash;
+                    const queryString = hash.split('?')[1];
+                    const params = new URLSearchParams(queryString);
+                    const article = params.get('article');
+
+
+                    const srcPath = `/src/data/markdown/${article}/${article}.md`;
+                    this.info = srcPath;
+
+                }, 100);
+            }
+        };
+    </script>
+</template>

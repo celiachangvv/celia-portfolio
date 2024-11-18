@@ -35,7 +35,7 @@
 </header>
 
 
-![Project Image](/src/data/markdown/Instaff/mockup-1.webp "Project Image")
+![Project Image](/src/data/markdown/Uniteer/mockup-1.webp "Project Image")
 
 <div class="single-one-work">
 
@@ -61,7 +61,7 @@ For user experience design, I was responsible for completing UX research, one of
 
 </div>
 
-![User flow for Parents](/src/data/markdown/Instaff/userflow-parent.svg "User flow for Parents")
+![User flow for Parents](/src/data/markdown/Uniteer/userflow-parent.svg "User flow for Parents")
 
 <div class="single-one-work">
 
@@ -69,7 +69,7 @@ For user experience design, I was responsible for completing UX research, one of
 
 </div>
 
-![User flow for Volunteers](/src/data/markdown/Instaff/userflow-volunteer.svg "User flow for Volunteers")
+![User flow for Volunteers](/src/data/markdown/Uniteer/userflow-volunteer.svg "User flow for Volunteers")
 
 <div class="single-one-work">
 
@@ -77,7 +77,7 @@ For user experience design, I was responsible for completing UX research, one of
 
 </div>
 
-![User flow for Organizations](/src/data/markdown/Instaff/userflow-org.svg "User flow for Organizations")
+![User flow for Organizations](/src/data/markdown/Uniteer/userflow-org.svg "User flow for Organizations")
 
 <div class="single-one-work">
 
@@ -85,7 +85,7 @@ For user experience design, I was responsible for completing UX research, one of
 
 </div>
 
-![User flow for Others](/src/data/markdown/Instaff/userflow-other.svg "User flow for Others")
+![User flow for Others](/src/data/markdown/Uniteer/userflow-other.svg "User flow for Others")
 
 <div class="single-one-work">
 
@@ -95,7 +95,7 @@ For user experience design, I was responsible for completing UX research, one of
 
 </div>
 
-![Wireframe for Parents](/src/data/markdown/Instaff/userflow-parent.svg "Wireframe for Parents")
+![Wireframe for Parents](/src/data/markdown/Uniteer/userflow-parent.svg "Wireframe for Parents")
 
 <div class="single-one-work">
 
@@ -103,7 +103,7 @@ For user experience design, I was responsible for completing UX research, one of
 
 </div>
 
-![Wireframe for Volunteers](/src/data/markdown/Instaff/userflow-volunteer.svg "Wireframe for Volunteers")
+![Wireframe for Volunteers](/src/data/markdown/Uniteer/userflow-volunteer.svg "Wireframe for Volunteers")
 
 <div class="single-one-work">
 
@@ -111,7 +111,7 @@ For user experience design, I was responsible for completing UX research, one of
 
 </div>
 
-![Wireframe for Organizations](/src/data/markdown/Instaff/wireframe-org.svg "Wireframe for Organizations")
+![Wireframe for Organizations](/src/data/markdown/Uniteer/wireframe-org.svg "Wireframe for Organizations")
 
 <div class="single-one-work">
 
@@ -123,55 +123,55 @@ As a UI designer, I worked on the UI kit, which included UI components, illustra
 
 The logo of Uniteer draws inspiration from a little bird, symbolizing the boundless growth of children. The distinct colors of the wings and the body of the bird represent three key elements: parents, organizations, and volunteers. This signifies their collective commitment to safeguarding the growth of children—each element is indispensable. The unique colors highlight the collaborative effort, emphasizing that parents, organizations, and volunteers work together harmoniously to nurture the unrestricted development of children.
 
-![Uniteer's logo](/src/data/markdown/Instaff/logo.svg "Uniteer's logo")
+![Uniteer's logo](/src/data/markdown/Uniteer/logo.svg "Uniteer's logo")
 
 ### UI Kit
 
 #### Typography
 
-![Typography](/src/data/markdown/Instaff/typography.svg "Typography")
+![Typography](/src/data/markdown/Uniteer/typography.svg "Typography")
 
 #### Color Palette
 
-![Color Palette](/src/data/markdown/Instaff/color.svg "Color Palette")
+![Color Palette](/src/data/markdown/Uniteer/color.svg "Color Palette")
 
 #### Icon
 
-![Icon](/src/data/markdown/Instaff/icon.svg "Icon")
+![Icon](/src/data/markdown/Uniteer/icon.svg "Icon")
 
 #### Buttons
 
-![Button](/src/data/markdown/Instaff/button.svg "Button")
+![Button](/src/data/markdown/Uniteer/button.svg "Button")
 
 #### Cards
 
-![Card](/src/data/markdown/Instaff/Card.svg "Card")
+![Card](/src/data/markdown/Uniteer/Card.svg "Card")
 
 #### Illustrations
 
-![illustration](/src/data/markdown/Instaff/illustration.svg "illustration 1")
+![illustration](/src/data/markdown/Uniteer/illustration.svg "illustration 1")
 
-![illustration](/src/data/markdown/Instaff/illustration-1.svg "illustration 2")
+![illustration](/src/data/markdown/Uniteer/illustration-1.svg "illustration 2")
 
-![illustration](/src/data/markdown/Instaff/illustration-2.svg "illustration 3")
+![illustration](/src/data/markdown/Uniteer/illustration-2.svg "illustration 3")
 
-![illustration](/src/data/markdown/Instaff/illustration-3.svg "illustration 4")
+![illustration](/src/data/markdown/Uniteer/illustration-3.svg "illustration 4")
 
 ### Mock up for Parent
 
-![Mockup for parents](/src/data/markdown/Instaff/mockup-parent.png "Mockup for parents")
+![Mockup for parents](/src/data/markdown/Uniteer/mockup-parent.png "Mockup for parents")
 
-![Mockup for parents](/src/data/markdown/Instaff/mockup-parent-1.png "Mockup for parents")
+![Mockup for parents](/src/data/markdown/Uniteer/mockup-parent-1.png "Mockup for parents")
 
-![Mockup for parents](/src/data/markdown/Instaff/mockup-parent-2.png "Mockup for parents")
+![Mockup for parents](/src/data/markdown/Uniteer/mockup-parent-2.png "Mockup for parents")
 
 ### Mock up for Volunteer
 
-![Mockup for volunteers](/src/data/markdown/Instaff/mockup-volunteer.png "Mockup for volunteers")
+![Mockup for volunteers](/src/data/markdown/Uniteer/mockup-volunteer.png "Mockup for volunteers")
 
 ### Mock up for Organizations
 
-![Mock up for Organizations](/src/data/markdown/Instaff/mockup-org.png "Mock up for Organizations")
+![Mock up for Organizations](/src/data/markdown/Uniteer/mockup-org.png "Mock up for Organizations")
 
 ### Tool Used
 

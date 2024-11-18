@@ -11,14 +11,17 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- library  -->
-  <script src="https://cdn.jsdelivr.net/gh/kirakiray/ofa.js@4.5.23/dist/ofa.min.js" defer> </script>
-  <script src="/header.comm.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/gh/kirakiray/ofa.js/dist/ofa.min.js"></script>
 </head>
 
 <body>
-  <o-app>
-    <o-page src="/src/pages/home.html"></o-page>
-  </o-app>
+  <l-m
+  src="https://cdn.jsdelivr.net/gh/kirakiray/ofa.js@4.5.26/libs/router/dist/router.min.mjs"
+></l-m>
+  <o-router >
+    <o-app src="/src/scripts/app-config.mjs">
+    </o-app>
+  </o-router>
 </body>
 
 </html>

@@ -6,19 +6,24 @@
     <l-m src="/src/components/home/md-template.html"></l-m>
     <my-layout>
         <main>
-            <md-template src="/src/data/markdown/Instaff/Instaff.md"></md-template>
+            <md-template attr:src="info"></md-template>
         </main>
     </my-layout>
     <script>
         export default {
             data: {
-                info: {},
+                info: "",
             },
             async ready() {
-                // this.info = await fetch("/src/data/projects/data-projects.json").then((e) => e.json());
+                const fullURL = window.location.href;
+                const hash = window.location.hash;
+                const queryString = hash.split('?')[1];
+                const params = new URLSearchParams(queryString);
+                const article = params.get('article');
+                const srcPath = `/src/data/markdown/${article}/${article}.md`;
+                this.info = srcPath;
+                console.log(this.info)
             }
-
-
         };
 
     </script>
